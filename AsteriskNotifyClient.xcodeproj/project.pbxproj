@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27207B880D971F8F0007D9CC /* NotificationClientApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 27207B870D971F8F0007D9CC /* NotificationClientApplication.m */; };
+		27207BB00D9722730007D9CC /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		27207BB10D9722800007D9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		27C9EDBE0D9718A50053A690 /* AppNotifyServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B71DED0D948EDB0004B924 /* AppNotifyServer.m */; };
+		27C9EDC10D9718B30053A690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		27C9EDCC0D9718BE0053A690 /* PubSub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C6DCEC0D955448002A022E /* PubSub.framework */; };
+		27C9EDCD0D9718C10053A690 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275729C10D952C85000AA99F /* AddressBook.framework */; };
+		27C9EDE00D9718C50053A690 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2757278B0D94B287000AA99F /* AppKit.framework */; };
+		27C9EF170D9718CA0053A690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275726650D94AD00000AA99F /* Foundation.framework */; };
+		27C9EF180D9718CA0053A690 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B71DF20D948F060004B924 /* Cocoa.framework */; };
+		27C9EF190D9718CA0053A690 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27B71DE70D948EB50004B924 /* Growl.framework */; };
+		27C9EF1B0D9718D80053A690 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 273DBC210D9496BD004A7B98 /* Growl Registration Ticket.growlRegDict */; };
+		27C9EF1E0D9718F60053A690 /* AppNotifyServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B71DEB0D948EC90004B924 /* AppNotifyServer.h */; };
+		27C9EF200D9718FD0053A690 /* GrowlController.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C6DE010D956D5B002A022E /* GrowlController.h */; };
+		27C9EF210D9719010053A690 /* NotificationClientApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 27AD23740D95F13700F1504D /* NotificationClientApplication.h */; };
+		27C9EF260D9719350053A690 /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C6DE020D956D5B002A022E /* GrowlController.m */; };
+		27C9EF390D9719600053A690 /* server.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27C6E17D0D959EDE002A022E /* server.icns */; };
+		27C9EF5A0D971B520053A690 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B71DE70D948EB50004B924 /* Growl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27C9EF590D971B440053A690 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27C9EF190D9718CA0053A690 /* Growl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27207B850D971EF60007D9CC /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27207B870D971F8F0007D9CC /* NotificationClientApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationClientApplication.m; sourceTree = "<group>"; };
+		273DBC210D9496BD004A7B98 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		275726650D94AD00000AA99F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2757278B0D94B287000AA99F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		275728E30D951E95000AA99F /* growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = growl.h; sourceTree = "<group>"; };
+		275728E40D951E95000AA99F /* growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = growl.m; sourceTree = "<group>"; };
+		275729C10D952C85000AA99F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
+		279917A00D969EBB00557702 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		27AD23740D95F13700F1504D /* NotificationClientApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationClientApplication.h; sourceTree = "<group>"; };
+		27B71DE70D948EB50004B924 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		27B71DEB0D948EC90004B924 /* AppNotifyServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotifyServer.h; sourceTree = "<group>"; };
+		27B71DED0D948EDB0004B924 /* AppNotifyServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotifyServer.m; sourceTree = "<group>"; };
+		27B71DF20D948F060004B924 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		27C6DCEC0D955448002A022E /* PubSub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PubSub.framework; path = /System/Library/Frameworks/PubSub.framework; sourceTree = "<absolute>"; };
+		27C6DE010D956D5B002A022E /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
+		27C6DE020D956D5B002A022E /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
+		27C6E17D0D959EDE002A022E /* server.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = server.icns; sourceTree = "<group>"; };
+		27C9EDA00D97183C0053A690 /* AsteriskNotifcationClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsteriskNotifcationClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27C9ED9E0D97183C0053A690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C9EF5A0D971B520053A690 /* Growl.framework in Frameworks */,
+				27C9EF170D9718CA0053A690 /* Foundation.framework in Frameworks */,
+				27C9EF180D9718CA0053A690 /* Cocoa.framework in Frameworks */,
+				27C9EDE00D9718C50053A690 /* AppKit.framework in Frameworks */,
+				27C9EDCD0D9718C10053A690 /* AddressBook.framework in Frameworks */,
+				27C9EDCC0D9718BE0053A690 /* PubSub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				27B71DED0D948EDB0004B924 /* AppNotifyServer.m */,
+				27B71DEB0D948EC90004B924 /* AppNotifyServer.h */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				275728E30D951E95000AA99F /* growl.h */,
+				275728E40D951E95000AA99F /* growl.m */,
+				27C6DE010D956D5B002A022E /* GrowlController.h */,
+				27C6DE020D956D5B002A022E /* GrowlController.m */,
+				27AD23740D95F13700F1504D /* NotificationClientApplication.h */,
+				27207B870D971F8F0007D9CC /* NotificationClientApplication.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C9EDA00D97183C0053A690 /* AsteriskNotifcationClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B71DE60D948EA30004B924 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				27C6DCEC0D955448002A022E /* PubSub.framework */,
+				275729C10D952C85000AA99F /* AddressBook.framework */,
+				2757278B0D94B287000AA99F /* AppKit.framework */,
+				275726650D94AD00000AA99F /* Foundation.framework */,
+				27B71DF20D948F060004B924 /* Cocoa.framework */,
+				27B71DE70D948EB50004B924 /* Growl.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* server */ = {
+			isa = PBXGroup;
+			children = (
+				27C6E17D0D959EDE002A022E /* server.icns */,
+				27B71DE60D948EA30004B924 /* Framework */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				273DBC210D9496BD004A7B98 /* Growl Registration Ticket.growlRegDict */,
+			);
+			name = server;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		27C9EF380D97194B0053A690 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C9EF200D9718FD0053A690 /* GrowlController.h in Headers */,
+				27C9EF210D9719010053A690 /* NotificationClientApplication.h in Headers */,
+				27C9EF1E0D9718F60053A690 /* AppNotifyServer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		27C9ED9F0D97183C0053A690 /* AsteriskNotifcationClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C9EDA50D97183D0053A690 /* Build configuration list for PBXNativeTarget "AsteriskNotifcationClient" */;
+			buildPhases = (
+				27C9EF380D97194B0053A690 /* Headers */,
+				27C9ED9C0D97183C0053A690 /* Resources */,
+				27C9ED9D0D97183C0053A690 /* Sources */,
+				27C9ED9E0D97183C0053A690 /* Frameworks */,
+				27C9EF590D971B440053A690 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsteriskNotifcationClient;
+			productName = AsteriskNotifcationClient;
+			productReference = 27C9EDA00D97183C0053A690 /* AsteriskNotifcationClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AsteriskNotifyClient" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* server */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27C9ED9F0D97183C0053A690 /* AsteriskNotifcationClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27C9ED9C0D97183C0053A690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27207BB10D9722800007D9CC /* InfoPlist.strings in Resources */,
+				27207BB00D9722730007D9CC /* MainMenu.nib in Resources */,
+				27C9EF390D9719600053A690 /* server.icns in Resources */,
+				27C9EF1B0D9718D80053A690 /* Growl Registration Ticket.growlRegDict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27C9ED9D0D97183C0053A690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C9EF260D9719350053A690 /* GrowlController.m in Sources */,
+				27C9EDC10D9718B30053A690 /* main.m in Sources */,
+				27C9EDBE0D9718A50053A690 /* AppNotifyServer.m in Sources */,
+				27207B880D971F8F0007D9CC /* NotificationClientApplication.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+				27207B850D971EF60007D9CC /* German */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				279917A00D969EBB00557702 /* German */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27C9EDA30D97183D0053A690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "AsteriskNotifcationClient-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AsteriskNotifcationClient;
+			};
+			name = Debug;
+		};
+		27C9EDA40D97183D0053A690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = AsteriskNotifcationClient;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27C9EDA50D97183D0053A690 /* Build configuration list for PBXNativeTarget "AsteriskNotifcationClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C9EDA30D97183D0053A690 /* Debug */,
+				27C9EDA40D97183D0053A690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AsteriskNotifyClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
