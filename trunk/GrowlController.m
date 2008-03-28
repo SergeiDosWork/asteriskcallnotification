@@ -12,7 +12,13 @@
 @implementation GrowlController
 
 -(void) handleNumber:(NSString*)callerNumber extension:(NSString*)extension;{
-	NSString *prefix  = [callerNumber substringWithRange:NSMakeRange(0, 1)];
+	NSString *prefix;
+	if([callerNumber length] > 1){
+		prefix  = [callerNumber substringWithRange:NSMakeRange(0, 1)];
+	}
+	else{
+		callerNumber = @"";
+	}
 	NSString *number;
 	if([prefix isEqualToString: @"0"]){
 		number = [callerNumber substringWithRange:NSMakeRange(1, [callerNumber length]-1)];
@@ -94,8 +100,11 @@
 		if(!title){
 			title = callerNumber;
 		}
+		if([title isEqualToString: @""]){
+			title = NSLocalizedStringFromTable(@"ANONYMOUS", @"InfoPlist", @"Comment");
+		}
 	}
-	NSString *extBase = @"FÜR";
+	NSString *extBase = NSLocalizedStringFromTable(@"CALL_FOR", @"InfoPlist", @"Comment");
 	extBase = [extBase stringByAppendingString: @" "];
 	extBase = [extBase stringByAppendingString: extension];
 	[self showMessage:title desc:extBase image:image];
