@@ -3,3 +3,7 @@
 "QUIT_APPLICATION" = "Asterisk Anruf-Benachrichtigung beenden";
 
 "GROWL_STARTED" = "Asterisk Benachrichtigung aktiviert";
+
+"CALL_FOR" = "FÜR";
+
+"ANONYMOUS" = "Anonyme Nummer";
