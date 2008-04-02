@@ -1,4 +1,10 @@
-
+//
+//  GrowlController.m
+//  AsteriskNotifyClient
+//
+//  Created by mike walder on 23.03.08.
+//  Copyright 2008 allink GmbH. All rights reserved.
+//
 
 #import "GrowlController.h"
 #import <PubSub/PSClient.h>
