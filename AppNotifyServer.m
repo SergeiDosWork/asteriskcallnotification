@@ -1,3 +1,11 @@
+//
+//  AppNotifyServer.m
+//  AsteriskNotifyClient
+//
+//  Created by mike walder on 23.03.08.
+//  Copyright 2008 allink GmbH. All rights reserved.
+//
+
 #import "AppNotifyServer.h"
 #include <sys/types.h>
 #include <sys/socket.h>
