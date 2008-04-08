@@ -14,8 +14,16 @@ static NSAutoreleasePool *globalPool = nil;
 - (void)resetAutoreleasePool:(NSTimer *)timer
 {
 #pragma unused (timer)
+	@try{
 	[globalPool release];
 	globalPool = [[NSAutoreleasePool alloc] init];
+					}
+				@catch (NSException *theErr)
+				{
+					NSLog (@"ERROR");
+					NSLog([theErr name]);
+
+				}
 }
 
 - (void)run
