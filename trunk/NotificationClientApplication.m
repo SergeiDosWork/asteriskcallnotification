@@ -14,43 +14,51 @@ static NSAutoreleasePool *globalPool = nil;
 - (void)resetAutoreleasePool:(NSTimer *)timer
 {
 #pragma unused (timer)
-	@try{
+	//@try{
 	[globalPool release];
 	globalPool = [[NSAutoreleasePool alloc] init];
-					}
-				@catch (NSException *theErr)
-				{
-					NSLog (@"ERROR");
-					NSLog([theErr name]);
+	//				}
+	//			@catch (NSException *theErr)
+	//			{
+	//				NSLog (@"ERROR");
+	//				NSLog([theErr name]);
 
-				}
+	//			}
 }
 
 - (void)run
 {
-	globalPool = [[NSAutoreleasePool alloc] init];
-	
-	NSStatusBar *bar = [NSStatusBar systemStatusBar];
-	NSStatusItem *theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
-    [theItem retain];
-    [theItem setTitle: @"a"];
-    [theItem setHighlightMode:YES];
-	NSMenu *theMenu = [[NSMenu alloc] initWithTitle: @"Stoppen"];
-    [theItem setMenu:theMenu];
-	NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle: NSLocalizedStringFromTable(@"QUIT_APPLICATION", @"InfoPlist", @"Comment") action:@selector(terminate:) keyEquivalent: @""];
-	[menuItem setTarget:self];
-	[theMenu addItem:menuItem];
-	[menuItem setEnabled:YES];
-	
-	[[NSTimer scheduledTimerWithTimeInterval:30
-									  target:self
-									selector:@selector(resetAutoreleasePool:)
-									userInfo:nil
-									 repeats:YES] retain];
-									 
-	server = [[AppNotifyServer alloc] init];
-	[server startServer];
-	[super run];
-	[globalPool release]; globalPool = nil;
+	@try{
+		globalPool = [[NSAutoreleasePool alloc] init];
+		
+		NSStatusBar *bar = [NSStatusBar systemStatusBar];
+		NSStatusItem *theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
+		[theItem retain];
+		[theItem setTitle: @"a"];
+		[theItem setHighlightMode:YES];
+		NSMenu *theMenu = [[NSMenu alloc] initWithTitle: @"Stoppen"];
+		[theItem setMenu:theMenu];
+		NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle: NSLocalizedStringFromTable(@"QUIT_APPLICATION", @"InfoPlist", @"Comment") action:@selector(terminate:) keyEquivalent: @""];
+		[menuItem setTarget:self];
+		[theMenu addItem:menuItem];
+		[menuItem setEnabled:YES];
+		
+		[[NSTimer scheduledTimerWithTimeInterval:30
+										  target:self
+										selector:@selector(resetAutoreleasePool:)
+										userInfo:nil
+										 repeats:YES] retain];
+		
+		server = [[AppNotifyServer alloc] init];
+		[server startServer];
+		[super run];
+		[globalPool release]; globalPool = nil;
+	}
+	@catch (NSException *theErr)
+	{
+		NSLog (@"Catching Error");
+		NSLog([theErr name]);
+		[self run];
+	}
 }
 @end

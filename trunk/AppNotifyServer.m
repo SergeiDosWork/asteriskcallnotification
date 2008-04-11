@@ -48,7 +48,7 @@
 	}
 	-(void)serverPolling:(id) NSObject{
 			msg = malloc((size_t)MAX_MSG+1);
-			NSLog(@"polling");
+			NSLog(@"starting udp Server");
 			while(1) {
 			NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 			cliLen = sizeof(cliAddr);
