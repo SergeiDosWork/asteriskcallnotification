@@ -47,8 +47,6 @@
 		273DBC210D9496BD004A7B98 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		275726650D94AD00000AA99F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2757278B0D94B287000AA99F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		275728E30D951E95000AA99F /* growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = growl.h; sourceTree = "<group>"; };
-		275728E40D951E95000AA99F /* growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = growl.m; sourceTree = "<group>"; };
 		275729C10D952C85000AA99F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = /System/Library/Frameworks/AddressBook.framework; sourceTree = "<absolute>"; };
 		279917A00D969EBB00557702 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		27AD23740D95F13700F1504D /* NotificationClientApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationClientApplication.h; sourceTree = "<group>"; };
@@ -89,8 +87,6 @@
 				27B71DED0D948EDB0004B924 /* AppNotifyServer.m */,
 				27B71DEB0D948EC90004B924 /* AppNotifyServer.h */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				275728E30D951E95000AA99F /* growl.h */,
-				275728E40D951E95000AA99F /* growl.m */,
 				27C6DE010D956D5B002A022E /* GrowlController.h */,
 				27C6DE020D956D5B002A022E /* GrowlController.m */,
 				27AD23740D95F13700F1504D /* NotificationClientApplication.h */,
