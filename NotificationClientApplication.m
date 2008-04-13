@@ -13,17 +13,9 @@
 static NSAutoreleasePool *globalPool = nil;
 - (void)resetAutoreleasePool:(NSTimer *)timer
 {
-#pragma unused (timer)
-	//@try{
+	#pragma unused (timer)
 	[globalPool release];
 	globalPool = [[NSAutoreleasePool alloc] init];
-	//				}
-	//			@catch (NSException *theErr)
-	//			{
-	//				NSLog (@"ERROR");
-	//				NSLog([theErr name]);
-
-	//			}
 }
 
 - (void)run
@@ -54,6 +46,7 @@ static NSAutoreleasePool *globalPool = nil;
 		[super run];
 		[globalPool release]; globalPool = nil;
 	}
+	//TODO: find out why app sometimes crashes after wakeup of OS X, then remove the try catch blocks
 	@catch (NSException *theErr)
 	{
 		NSLog (@"Catching Error");
