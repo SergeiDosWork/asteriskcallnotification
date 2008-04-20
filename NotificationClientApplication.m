@@ -35,12 +35,13 @@ static NSAutoreleasePool *globalPool = nil;
 		[theMenu addItem:menuItem];
 		[menuItem setEnabled:YES];
 		
-		[[NSTimer scheduledTimerWithTimeInterval:30
+	/*
+			[[NSTimer scheduledTimerWithTimeInterval:30
 										  target:self
 										selector:@selector(resetAutoreleasePool:)
 										userInfo:nil
 										 repeats:YES] retain];
-		
+	*/	
 		server = [[AppNotifyServer alloc] init];
 		[server startServer];
 		[super run];
@@ -51,6 +52,7 @@ static NSAutoreleasePool *globalPool = nil;
 	{
 		NSLog (@"Catching Error");
 		NSLog([theErr name]);
+		NSLog([theErr reason]); 
 		[self run];
 	}
 }
