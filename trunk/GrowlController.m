@@ -20,9 +20,11 @@
 -(void) handleNumber:(NSString*)callerNumber extension:(NSString*)extension;{
 	NSString *prefix;
 	if([callerNumber length] > 1){
+		NSLog(@"has number");
 		prefix  = [callerNumber substringWithRange:NSMakeRange(0, 1)];
 	}
 	else{
+		NSLog(@"empty");
 		callerNumber = @"";
 	}
 	NSString *number;
@@ -76,14 +78,13 @@
 				title = [title stringByAppendingString: lastName];
 			}
 		}
-		else{
+	//	else{
 				title = [title stringByAppendingString: @" ("];
 				title = [title stringByAppendingString: label];
 				title = [title stringByAppendingString: @")"];
-		}
+	//	}
 	}
-	else{
-		NSLog(@"web Search");
+	else if ([callerNumber length] > 0){
 		//conduct web search via tel.search.ch
 		NSString *baseURLTemplate = @"http://tel.search.ch/api/?maxnum=1&was=";
 		NSString *urlString = [baseURLTemplate stringByAppendingString: callerNumber];
@@ -109,6 +110,9 @@
 		if([title isEqualToString: @""]){
 			title = NSLocalizedStringFromTable(@"ANONYMOUS", @"InfoPlist", @"Comment");
 		}
+	}
+	else{
+		title = NSLocalizedStringFromTable(@"ANONYMOUS", @"InfoPlist", @"Comment");
 	}
 	NSString *extBase = NSLocalizedStringFromTable(@"CALL_FOR", @"InfoPlist", @"Comment");
 	extBase = [extBase stringByAppendingString: @" "];
